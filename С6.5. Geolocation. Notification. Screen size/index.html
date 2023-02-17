@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Задание 2 (С6.5. Geolocation. Notification. Screen size)</h2>
+        <button class="button">press me</button>
+    </div>
+    <script>
+        const btn = document.querySelector('.button');
+
+        btn.addEventListener('click', () => {
+            alert(`Ширина экрана = ${window.screen.width},
+                    \nВысота экрана = ${window.screen.height}`)
+        })
+    </script>
+</body>
+</html>
